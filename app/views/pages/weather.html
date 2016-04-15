@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weather APP</title>
+<link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="forecast">
+<h1>Weather at <span id="location"> </span></h1>
+<div id="imgdiv">
+<img id="img" src=""/>
+</div>
+<p>It is currently <span id="temp"> </span>ªF with <span id="desc"> </span></p>
+<p>Wind: <span id="wind"></span></p>
+</div>
+<script>
+	var Geo={};
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(success,error);
+}
+else {
+alert('Geolocation is not supported');
+}
+function error() {
+alert("That's weird! We couldn't find you!");
+}
+function success(position) {
+      Geo.lat = position.coords.latitude;
+      Geo.lng = position.coords.longitude;
+</script>
+</body>
+</html>
