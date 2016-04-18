@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Weather APP</title>
-<link rel="stylesheet" href="style.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="weather.js"></script>
-</head>
-<body>
 <script type="text/javascript">
 $(document).ready(function(){
 
@@ -28,6 +18,3 @@ function success(position) {
 
   });
 </script>
-</div>
-</body>
-</html>
