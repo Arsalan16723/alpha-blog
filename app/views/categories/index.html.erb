@@ -16,6 +16,12 @@
 
 							</li>
 
+							<li>
+							
+							<small><%= pluralize(category.articles.count, "article")%></small>
+							
+							</li>
+
 						</div>
 
 					</div>
@@ -24,4 +30,4 @@
 
 		<% end %>
 	<% will_paginate %>
-</div>
+	</div>
